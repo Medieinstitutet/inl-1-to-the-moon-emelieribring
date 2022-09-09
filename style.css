@@ -1,0 +1,45 @@
+body{
+    background-image: url(adam-miller-dBaz0xhCkPY-unsplash.jpg);
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:100%;
+    width: 100%;
+}
+
+#box{
+    width: 26vw;
+    height: 26vw;
+    background-color: #fff; opacity: 50%;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+#box2{
+    width: 25.5vw;
+    height: 25.5vw;
+    border: 5px solid #000;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+h1{
+    font-size:  6vw; 
+    text-align: center;
+    font-family: Rubik;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+      font-size: 8vw; 
+    }
+  }
+
+#ros{
+    font-family: Rubik;
+    font-size: 1vw;
+    position: absolute;
+    left: 2vw;
+}
