@@ -1,5 +1,5 @@
 body{
-    background-image: url(adam-miller-dBaz0xhCkPY-unsplash.jpg);
+    background-image: url(/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
     height: 100vh; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -7,7 +7,29 @@ body{
     width: 100%;
 }
 
-#box{
+/* Här nedan är mitt försök till en responsiv startsida. 
+Allt lägger sig mer eller mindre rätt nu när man minskar sidan
+till mobilstorlek men jag får för mig att det är väldigt mycket kod, 
+och att jag har "fuskat" lite på vissa ställen, spciellt när det gäller placering.
+Du får jättegärna kolla igenom och säga om jag är helt ute och cyklar
+eller om de är någorlunda rätt tänk!?*/
+
+
+#arrow{
+    width: 20px;
+    height: 20px;
+    margin-left: 400px;
+    margin-top: 386px;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s ease-out;
+}
+
+#arrow:hover {
+    margin-left: 410px;
+  }
+
+.box{
     width: 26vw;
     height: 26vw;
     background-color: #fff; opacity: 50%;
@@ -16,30 +38,73 @@ body{
     left: 100px;
 }
 
-#box2{
+.box2{
     width: 25.5vw;
     height: 25.5vw;
-    border: 5px solid #000;
+    border: 4px solid #000;
     position: absolute;
     top: 80px;
     left: 100px;
 }
 
+.box3{
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    border: 0px solid #000;
+}
+
 h1{
-    font-size:  6vw; 
+    font-size:  5rem; 
     text-align: center;
     font-family: Rubik;
 }
 
+.ros{
+    font-family: Rubik;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 300px;
+    top: 380px;
+}
+
 @media screen and (max-width: 500px) {
-    h1 {
-      font-size: 8vw; 
+    .box2{
+    width: 27vw;
+    height: 30vw;
+    border: 3px solid #000;
     }
+
+    .box3 {
+        width: 5.5rem;
+        height: 8rem;
+        margin-left: 25px;
+        margin-top: -10px;
+
+    }
+
+    h1{
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .ros{
+        font-size: 0.7rem;
+        left: 110px;
+        top: 205px;
+    }
+
+    #arrow{
+        margin-left: 190px;
+        margin-top: 205px;
+    }
+
+    #arrow:hover{
+        margin-left: 200px;
+    }
+
   }
 
-#ros{
-    font-family: Rubik;
-    font-size: 1vw;
-    position: absolute;
-    left: 2vw;
-}
+
