@@ -24,19 +24,26 @@
     background-position: 50% 50%;
 }
 
+.buttonborder{
+    width: 100%;
+}
+
 button {
 
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    position: absolute;
+    left: 94%;
+    top: 10px;
 }
 
 button span {
 
-    width: 20px;
-    height: 3px;
+    width: 40px;
+    height: 6px;
     margin-bottom: 4px;
     border-radius: 3px;
     display: block;
@@ -85,6 +92,7 @@ h1{
     top: -10px;
     left: 0;
     transition: left 2s ease-out;
+    cursor: pointer;
 }
 
 .link-text span{
@@ -119,6 +127,10 @@ h1{
         top: -35px;
         left: -10px;
         transition: none;
+    }
+
+    button{
+        left: 85%;
     }
 
 }
