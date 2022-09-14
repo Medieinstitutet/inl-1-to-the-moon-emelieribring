@@ -1,110 +1,94 @@
-body{
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- HELPERS -----------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+.full-height{
+    min-height: 100vh;
+}
+
+.astronaut{
+    background-color: chartreuse;
+}
+
+.text-page{
+    background-color: crimson;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- LAYOUT -----------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+.astronaut{
     background-image: url(/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
-    height: 100vh; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size:100%;
-    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-/* Här nedan är mitt försök till en responsiv startsida. 
-Allt lägger sig mer eller mindre rätt nu när man minskar sidan
-till mobilstorlek men jag får för mig att det är väldigt mycket kod, 
-och att jag har "fuskat" lite på vissa ställen, spciellt när det gäller placering.
-Du får jättegärna kolla igenom och säga om jag är helt ute och cyklar
-eller om de är någorlunda rätt tänk!?*/
-
-
-#arrow{
-    width: 20px;
-    height: 20px;
-    margin-left: 400px;
-    margin-top: 386px;
+nav{
     position: absolute;
-    z-index: 1;
-    transition: 0.5s ease-out;
 }
 
-#arrow:hover {
-    margin-left: 410px;
-  }
 
-.box{
-    width: 26vw;
-    height: 26vw;
-    background-color: #fff; opacity: 50%;
-    position: absolute;
-    top: 80px;
-    left: 100px;
-}
-
-.box2{
-    width: 25.5vw;
-    height: 25.5vw;
+.text-box{
+    width: 22rem;
+    height: 22rem;
+    background-color: rgba(255,255,255,0.5);
     border: 4px solid #000;
     position: absolute;
     top: 80px;
-    left: 100px;
-}
-
-.box3{
-    width: 22rem;
-    height: 22rem;
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    border: 0px solid #000;
+    left: 150px;
+    padding: 20px;
 }
 
 h1{
-    font-size:  5rem; 
+    font-size:  6rem; 
+    position: relative;
     text-align: center;
     font-family: Rubik;
 }
 
-.ros{
+.link-text{
     font-family: Rubik;
-    font-size: 0.9rem;
-    position: absolute;
-    left: 300px;
-    top: 380px;
+    font-size: 0.7rem;
+    position: relative;
+    text-align: right;
+    top: -10px;
+    left: 0;
+    transition: left 2s ease-out;
+}
+
+.link-text span{
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease-out;
+}
+
+.link-text:hover span{
+    left: 10px;
 }
 
 @media screen and (max-width: 500px) {
-    .box2{
-    width: 27vw;
-    height: 30vw;
-    border: 3px solid #000;
-    }
-
-    .box3 {
-        width: 5.5rem;
-        height: 8rem;
-        margin-left: 25px;
-        margin-top: -10px;
-
+    
+    .text-box{
+        width: 6.3rem;
+        height: 7.5rem;
+        left: 45px;
+        top: 70px;
+        border: 3px solid #000;
     }
 
     h1{
         font-size: 2rem;
         font-weight: bolder;
+        top: -30px;
+
     }
 
-    .ros{
-        font-size: 0.7rem;
-        left: 110px;
-        top: 205px;
+    .link-text{
+        text-align: left;
+        top: -35px;
+        left: -10px;
+        transition: none;
     }
 
-    #arrow{
-        margin-left: 190px;
-        margin-top: 205px;
-    }
-
-    #arrow:hover{
-        margin-left: 200px;
-    }
-
-  }
-
-
+}

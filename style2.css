@@ -1,0 +1,119 @@
+body{
+    background-image: url(/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    position:sticky;
+}
+
+.layer {
+    background-color: #000; opacity: 50%;
+    position: absolute;
+    background-size: 100%;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    height: 700px;
+    width: 1500px;
+   
+}
+
+.space{
+    font-family: Rubik;
+    position: absolute;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bolder;
+    left: 70px;
+    top: -30px;
+}
+
+.ventures{
+    font-family: 'Times New Roman';
+    position: absolute;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bolder;
+    z-index: -2;
+    top: -30px;
+    left: 60px;
+}
+
+.citatstor{
+    font-family: Rubik;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    z-index: -2;
+    left: 800px;
+    top: 60px;
+    font-style: italic;
+    font-weight:100;
+    background-image: linear-gradient(to top, rgb(209, 71, 209), #fff, rgb(214, 110, 127));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 60%;
+}
+
+.text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    top: 220px;
+    text-align: left;
+}
+
+.rubrik{
+    font-size: 20px;
+    color: #fff;
+}
+
+.textdel{
+    position: absolute;
+    color: #fff;
+    left: 50px;
+    font-size: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .layer {
+        background-color: #000; opacity: 50%;
+        position: absolute;
+        background-size: 100%;
+        z-index: -1;
+        top: -10px;
+        left: -10px;
+        height: 600px;
+        width: 600px;
+       
+    }
+
+    .space{
+        font-family: Rubik;
+        position: absolute;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bolder;
+        left: 70px;
+        top: -20px;
+        text-shadow: 2px 2px #000;
+    }
+    
+    .ventures{
+        font-family: 'Times New Roman';
+        position: absolute;
+        color: #fff;
+        font-size: 70px;
+        font-weight: bolder;
+        z-index: -2;
+        top: -30px;
+        left: 100px;
+        text-shadow: 2px 2px #000;
+    }
+    
+
+}
