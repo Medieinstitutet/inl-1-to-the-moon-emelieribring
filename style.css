@@ -15,55 +15,13 @@
 }
 
 /*---------------------------------------------------------------------------------*/
-/*------------------------------- LAYOUT -----------------------------------------*/
+/*------------------------------- LAYOUT STARTSIDA --------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
 .astronaut{
-    background-image: url(/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+    background-image: url(/inl-1-to-the-moon-emelieribring/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
     background-size: cover;
     background-position: 50% 50%;
-}
-
-.buttonborder{
-    width: 100%;
-}
-
-button {
-
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    left: 94%;
-    top: 10px;
-}
-
-button span {
-
-    width: 40px;
-    height: 6px;
-    margin-bottom: 4px;
-    border-radius: 3px;
-    display: block;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    right: 0;
-    left: 0;
-    transition: all 0.3s ease-in-out;
-}
-
-
-button:hover span:nth-child(2) {
-    right: 4px;
-}
-button:hover span:nth-child(1) {
-    left: 4px;
-}
-
-button:hover span:nth-child(3) {
-    left: 4px;
 }
 
 .text-box{
@@ -91,7 +49,6 @@ h1{
     text-align: right;
     top: -10px;
     left: 0;
-    transition: left 2s ease-out;
     cursor: pointer;
 }
 
@@ -104,6 +61,207 @@ h1{
 .link-text:hover span{
     left: 10px;
 }
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- BUTTONS STARTSIDA -------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+.buttonborder{
+    width: 100%;
+}
+
+button {
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 94%;
+    top: 10px;
+}
+
+button span {
+
+    width: 35px;
+    height: 5px;
+    margin-bottom: 6px;
+    border-radius: 50px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+button span:nth-child(2) {
+    right: 4px;
+}
+button span:nth-child(1) {
+    left: 4px;
+}
+
+button span:nth-child(3) {
+    left: 4px;
+}
+
+button:hover span:nth-child(2) {
+    left: 4px;
+}
+
+.text-arrow{
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    display: none;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- LAYOUT NERSCROLLAD ------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+.text-page{
+    background-image: url(/inl-1-to-the-moon-emelieribring/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.darklayer{
+    background-color: #000; opacity: 50%;
+    position: absolute;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.citatstor{
+    font-family: Rubik;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    left: 730px;
+    top: 630px;
+    font-style: italic;
+    font-weight:100;
+    background-image: linear-gradient(to top, rgb(209, 71, 209), #fff, rgb(214, 110, 127));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 60%;
+    z-index: 1;
+}
+
+.spaceventures{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 5%;
+}
+
+.ventures{
+    font-family: 'Times New Roman';
+    position: relative;
+    color: #fff;
+    font-size: 75px;
+    font-weight: bolder;
+    text-align: left;
+    left: 5%;
+    top: -50%;
+    text-shadow: 2px 2px #000;
+}
+
+.space{
+    font-family: Rubik;
+    position: relative;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: left;
+    left: 3%;
+    top: -5%;
+    text-shadow: 2px 2px #000;
+    z-index: 1;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*-------------------------------------- GRID -------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(49, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+} 
+
+.grid-item {
+    background-color: transparent;
+    border: 1px solid rgb(38, 17, 153);
+    text-align: center;
+  }
+
+.div1 { grid-area: 1 / 1 / 2 / 4; }
+.div2 { grid-area: 1 / 4 / 2 / 12; }
+.div3 { grid-area: 1 / 12 / 2 / 21; }
+.div4 { grid-area: 1 / 21 / 2 / 30; }
+.div5 { grid-area: 1 / 30 / 2 / 39; }
+.div6 { grid-area: 1 / 39 / 2 / 47; }
+.div7 { grid-area: 1 / 47 / 2 / 50; }
+.div8 { grid-area: 2 / 1 / 4 / 4; }
+.div9 { grid-area: 2 / 4 / 4 / 12; }
+.div10 { grid-area: 2 / 12 / 4 / 21; }
+.div11 { grid-area: 2 / 21 / 4 / 30; }
+.div12 { grid-area: 2 / 30 / 4 / 39; }
+.div13 { grid-area: 2 / 39 / 4 / 47; }
+.div14 { grid-area: 2 / 47 / 4 / 50; }
+.div15 { grid-area: 4 / 1 / 6 / 4; }
+.div16 { grid-area: 4 / 4 / 6 / 12; }
+.div17 { grid-area: 4 / 12 / 6 / 21; }
+.div18 { grid-area: 4 / 21 / 6 / 30; }
+.div19 { grid-area: 4 / 30 / 6 / 39; }
+.div20 { grid-area: 4 / 39 / 6 / 47; }
+.div21 { grid-area: 4 / 47 / 6 / 50; }
+.div22 { grid-area: 6 / 1 / 8 / 4; }
+.div23 { grid-area: 6 / 4 / 8 / 12; }
+.div24 { grid-area: 6 / 12 / 8 / 21; }
+.div25 { grid-area: 6 / 21 / 8 / 30; }
+.div26 { grid-area: 6 / 30 / 8 / 39; }
+.div27 { grid-area: 6 / 39 / 8 / 47; }
+.div28 { grid-area: 6 / 47 / 8 / 50; }
+.div29 { grid-area: 8 / 1 / 10 / 4; }
+.div30 { grid-area: 8 / 4 / 10 / 12; }
+.div31 { grid-area: 8 / 12 / 10 / 21; }
+.div32 { grid-area: 8 / 21 / 10 / 30; }
+.div33 { grid-area: 8 / 30 / 10 / 39; }
+.div34 { grid-area: 8 / 39 / 10 / 47; }
+.div35 { grid-area: 8 / 47 / 10 / 50; }
+.div36 { grid-area: 10 / 1 / 12 / 4; }
+.div37 { grid-area: 10 / 4 / 12 / 12; }
+.div38 { grid-area: 10 / 12 / 12 / 21; }
+.div39 { grid-area: 10 / 21 / 12 / 30; }
+.div40 { grid-area: 10 / 30 / 12 / 39; }
+.div41 { grid-area: 10 / 39 / 12 / 47; }
+.div42 { grid-area: 10 / 47 / 12 / 50; }
+.div43 { grid-area: 12 / 1 / 13 / 3; }
+.div44 { grid-area: 12 / 4 / 13 / 12; }
+.div45 { grid-area: 12 / 12 / 13 / 21; }
+.div46 { grid-area: 12 / 21 / 13 / 30; }
+.div47 { grid-area: 12 / 30 / 13 / 39; }
+.div48 { grid-area: 12 / 39 / 13 / 47; }
+.div49 { grid-area: 12 / 47 / 13 / 50; } 
+
+/*---------------------------------------------------------------------------------*/
+/*------------------------------- MEDIA RULE --------------------------------------*/
+/*---------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 500px) {
     
@@ -131,6 +289,26 @@ h1{
 
     button{
         left: 85%;
+    }
+
+    .text-arrow{
+        display: block;
+    }
+
+    /*---------------------------------------------------------------------------------*/
+    /*------------------------------- MEDIA RULE --------------------------------------*/
+    /*---------------------------------------------------------------------------------*/
+
+    .space{
+        font-size: 50px;
+        left: 7%;
+        top: 0.5px;
+    }
+
+    .ventures{
+        font-size: 60px;
+        left: 20%;
+        top: -40%;
     }
 
 }
