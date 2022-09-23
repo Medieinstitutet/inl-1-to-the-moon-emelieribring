@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------------*/
-/*------------------------------- HELPERS -----------------------------------------*/
+/*---------------------------------- HELPERS --------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 
 .full-height{
@@ -12,6 +12,11 @@
 
 .text-page{
     background-color: crimson;
+}
+
+a, a:hover {
+    color: #000000;
+    text-decoration: none;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -80,12 +85,13 @@ button + .menu {
     display: none;
     opacity: 0;
     visibility: hidden;
-  }
+}
+
 button.menu-open + .menu {
     display: block;
     opacity: 1;
     visibility: visible;
-  }
+}
 
 .menu {
     min-height: 100%;
@@ -162,26 +168,22 @@ button:hover span:nth-child(3) {
     font-weight: bolder;
     text-shadow: 2px 4px rgb(122, 121, 121,0.5);
     cursor: pointer;
+    list-style-type: none;
 }
 
 .SVmeny{
-    top: 80px;
+    top: 150px;
 }
 
 .about{
-    top: 120px;
+    top: 250px;
 }
 
-/*.ourstory:hover, .SVmeny:hover, .about:hover{
-    text-decoration: underline solid #e60073;
-    text-decoration-thickness:6px;
-}*/
-
-.ourstory:hover:after, .SVmeny:hover:after, .about span:hover:after, .about:hover:after { 
+.ourstory:hover:after, .SVmeny:hover:after, .about:hover:after { 
     content: '';
     height: 7px;
     width: 300px;
-    left: 525px;
+    left: 505px;
     position: relative;
     background: #e60073;
     border-radius: 5px;
@@ -190,14 +192,15 @@ button:hover span:nth-child(3) {
 
 .SVmeny:hover:after{
     width: 450px;
-    left: 450px;
+    left: 430px;
 }
 
-.about span:hover:after{
-    width: 200px;
-    left: 570px;
+.about:hover:after{
+    width: 300px;
+    left: 505px;
     padding-bottom: 0%;
 }
+
 /*---------------------------------------------------------------------------------*/
 /*------------------------------- LAYOUT NERSCROLLAD ------------------------------*/
 /*---------------------------------------------------------------------------------*/
@@ -322,29 +325,32 @@ button:hover span:nth-child(3) {
     height: 50px;
     position: fixed;
     background-color: rgb(6, 10, 66);
-    top: 595px;
     font-family: Rubik;
     z-index: 1;
+    bottom: 0%;
+    display: flex;
 }
 
 .cookietext {
     position: relative;
-    top: 5px;
-    left: 20px;
     font-size: 13px;
     color: rgb(197, 34, 135);
     text-shadow: 0 0 5px rgb(209, 118, 179), 0 0 30px #e60073, 0 0 40px #e60073;
+    justify-content:left;
+    top: 4px;
+    left: -6%;
 }
 
 .accept{
     width: 100px;
     height: 30px;
     background-color: #4f51cc;
-    position: absolute;
-    left: 90%;
+    position: relative;
     color: #fff;
     font-family: rubik;
     font-weight: bold;
+    flex-wrap:wrap;
+    left: 90%;
 }
 
 .read{
@@ -510,7 +516,7 @@ button:hover span:nth-child(3) {
         width: 315px;
     }
 
-    .cookie, .majortom{
+    .majortom{
         display: none;
     }
 
@@ -527,4 +533,5 @@ button:hover span:nth-child(3) {
         line-height: 10%;
     }
 
-}
+} 
+

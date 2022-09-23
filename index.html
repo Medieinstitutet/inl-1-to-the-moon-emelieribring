@@ -20,20 +20,22 @@
         <span></span>
         <span></span>
       </button>
-      <div class="menu"> 
-        <p class="ourstory">OUR STORY</p>
-        <p class="SVmeny">SPACE VENTURES</p>
-        <p class="about"><span>ABOUT</span><br>MAJOR TOM</p> 
-      </div>
+      <nav class="menu"> 
+        <ul>
+          <li class="ourstory"><a href="link">OUR STORY</a></li>
+          <li class="SVmeny"><a href="link">SPACE VENTURES</a></li>
+          <li class="about"><a href="link">ABOUT <br> MAJOR TOM</a></li> 
+        </ul>
+      </nav>
     </div>
 
     <p class="text-arrow">⬇</p>
 
       <div class="text-box">
-        <h1>TO THE <br>
-        MOON</h1>
-        <p class="link-text">Read our story <span>→</span></p>
+        <h1>TO THE <br> MOON</h1>
+        <p class="link-text"><a href="link">Read our story <span>→</span></a></p>
       </div>
+
   </section>
 
 <!--------------------------------------------------------------------------------------->
@@ -107,7 +109,8 @@
       </p>
       <p class="groundcontroltext">You've really made the grade. And the papers want to know whose shirts
         you wear. Now it's time to leave the capsule if you dare. This is Major Tom
-        to Ground Control. I'm stepping through the door.</p>
+        to Ground Control. I'm stepping through the door.
+      </p>
     </section>
 
     <img class="majortom" src="/inl-1-to-the-moon-emelieribring/assets/photos/major_tom.jpg" alt="majortom">
@@ -124,24 +127,24 @@
         <span class="lastpart"><br class="br-mob">Far above the moon. <br>
         Planet Earth is blue<br>
         And there's nothing I can do<br>
-        <span class="read">Read more about Major Tom</span></span></p>
+        <span class="read">Read more about Major Tom</span></span>
+      </p>
     </section>
   
     <section class="floating">
       <p>“And I'm floating in a most peculiar way. And the stars look very different today. For here.”</p>
     </section>
   
-  
     <p class="space">Space</p>
     <p class="ventures">Ventures</p>
   
-
     <section>
-      <p class="citatstor">Persistence is very <br> 
-    important. You <br>
-    should not give up <br>
-    unless you are <br>
-    forced to give up. 
+      <p class="citatstor">
+        Persistence is very <br> 
+        important. You <br>
+        should not give up <br>
+        unless you are <br>
+        forced to give up. 
       </p>
     </section>
 
@@ -154,12 +157,10 @@
 
   <script>
     const menuBtn = document.querySelector('#menu-button');
-menuBtn.addEventListener('click', () => {
+    menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('menu-open');
-});
+    });
   </script>
-
-
 
 </body>
 </html>
